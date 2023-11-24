@@ -1,0 +1,608 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 45px;
+    font-size: 29px;
+}
+
+#signform {
+    width: 500px;
+    padding: 3% 0 0 0;
+    margin: auto;
+}
+
+#signlogformlog {
+    width: 500px;
+    padding: 0 0 0 0;
+    margin: auto;
+}
+
+#formsign {
+    animation-name: launch;
+    animation-duration: 4s;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 500px;
+    margin: 0 0 0 0;
+    padding: 45px;
+    border: 0.5px solid rgba(128, 128, 128, 0.418);
+    /* text-align: center; */
+    border-radius: 15px;
+}
+
+#formlog {
+    animation-name: launch;
+    animation-duration: 4s;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 500px;
+    margin: 0 0 0 0;
+    padding: 45px;
+    /* text-align: center; */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+#formsign input[type='email'],
+input[type='password'] {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0.5px solid rgba(150, 147, 147, 0.274);
+    /* margin: 0 0 15px; */
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+#formsign input[type='email']:focus {
+    border: 1px solid rgba(89, 191, 231, 0.747);
+    outline: none;
+    background: transparent;
+    box-shadow: 0 3px 3px 0 rgba(120, 223, 236, 0.315), 0px 0px 0px 3px  rgba(120, 223, 236, 0.315) ;
+}
+
+#formlog input[type='email'],
+input[type='password'] {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0.5px solid rgba(182, 179, 179, 0.568);
+    /* margin: 0 0 15px; */
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+#formlog input[type='email']:focus {
+    border: 1px solid rgba(89, 191, 231, 0.747);
+    outline: none;
+    background: transparent;
+    box-shadow: 0 3px 3px 0 rgba(120, 223, 236, 0.315), 0px 0px 0px 3px  rgba(120, 223, 236, 0.315) ;
+}
+
+input[type='password']:focus {
+    border: 1px double rgba(89, 191, 231, 0.747);
+    outline: none;
+    box-shadow: 0 3px 3px 0 rgba(120, 223, 236, 0.315), 0px 0px 0px 3px  rgba(120, 223, 236, 0.315) ;
+}
+
+#passsectionsign {
+    margin-top: 35px;
+}
+
+input[type='text'] {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: white;
+    width: 100%;
+    border: 0.5px solid rgba(112, 110, 110, 0.404);
+    /* margin: 0 0 15px 0; */
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+input[type='text']:focus {
+    border: 1px double rgba(89, 191, 231, 0.747);
+
+    outline: none;
+}
+
+.validation-icon {
+    position: absolute;
+    right: 50px;
+    top: 195px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.validation-icons {
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.validation-icons .bi-exclamation-circle {
+    position: absolute;
+    right: 0px;
+    top: 20.5%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.validation-iconlog {
+    position: absolute;
+    right: 50px;
+    top: 195PX;
+    transform: translateY(-50%);
+}
+
+.validation-iconslog {
+    position: absolute;
+    right: 50px;
+    top: 280PX;
+    transform: translateY(-50%);
+}
+
+.signupbtnw {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 0.5px solid rgba(83, 81, 81, 0.26);
+    padding: 14px;
+    color: #0c0b0b;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+.bi-eye {
+    color: #344b3a;
+}
+
+.bi-eye:hover {
+    color: #207cd3;
+}
+
+.bi-eye-slash {
+    color: rgb(78, 54, 54);
+}
+
+.bi-eye-slash:hover {
+    color: #105da5;
+}
+
+.signupbtnw:hover {
+    background: lightgray;
+}
+
+.signupbtnface {
+    margin-top: 10px;
+    outline: 0;
+    background: #1877f2!important;;
+    width: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.144);
+    padding: 15px;
+    color: #eee9e9;
+    font-size: 14px;
+    font-weight: bolder;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.signupbtnface:hover {
+    background: #1161ca!important;
+}
+
+#already {
+    margin-left: 164px;
+    margin-top: 0px;
+    color: #222020;
+    font-size: 14px;
+}
+
+#need {
+    margin-left: 203px;
+    color: #1d1b1b;
+    font-size: 14px;
+}
+
+#already a {
+    margin-left: 6px;
+    text-decoration: none;
+    color: #04aa6d;
+    font-weight: 600;
+}
+
+#need a {
+    margin-left: 6px;
+    text-decoration: none;
+    color: #04aa6d;
+    font-weight: 600;
+}
+
+.showhide {
+    margin-left: 267px;
+    margin-top: 0px;
+    color: #020202;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#passcheck {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0 0 0 0 ;
+}
+
+li {
+    position: relative;
+    padding-left: 10px;
+    margin: 0 5px 2px 0;
+    line-height: 1.5;
+    left: 5px;
+    background-color: transparent;
+    color: initial;
+    font-size: 14px;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-color: rgb(108, 109, 108);
+    border-radius: 50%;
+}
+
+#passcheck li.valid {
+    color: gray;
+}
+
+#passcheck li.valid::before {
+    background-color: grey;
+}
+
+#passcheck li:not(.valid)::before {
+    background-color: rgb(4, 170, 109);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#strongPassword {
+    background-color: #198754;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.bi-check-circle-fill {
+    margin-left: 20px;
+    color:  #04aa6d;
+}
+
+#errorBo {
+    background-color: #faed346b;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: #000;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+#vercheck[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 0.5px solid #615e5e6c;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#vercheck[type="checkbox"]:focus{
+    box-shadow: 0 3px 3px 0 rgba(120, 223, 236, 0.315), 0px 0px 0px 3px  rgba(120, 223, 236, 0.315) ;
+}
+
+#vercheck[type="checkbox"]:checked {
+    background:  #04aa6d;
+}
+
+#vercheck[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#midemail {
+    color: #0a0a09;
+    margin-left: 5px;
+}
+
+#formfootdiv {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+#isignbtn {
+    color: white;
+    font-size: 16px;
+    background-color: #04aa6d;
+    margin-top: 10px;
+    outline: 0;
+    background: #04aa6d;
+    width: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.075);
+    padding: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+#isignbtn:hover {
+    background-color: #198754;
+}
+
+.logbtn {
+    color: white;
+    font-size: 16px;
+    background-color: #04aa6d;
+    margin-top: 10px;
+    outline: 0;
+    background: #04aa6d;
+    width: 100%;
+    border: 0.5px solid rgba(99, 98, 98, 0.089);
+    padding: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.logbtn:hover {
+    background-color: #198754;
+}
+
+.bi {
+    margin-right: 10px;
+}
+
+#Layer_1 {
+    margin-right: 10px;
+}
+
+#googleicon {
+    margin-right: 10px;
+}
+
+.signformmain .formlogin {
+    display: none;
+}
+
+#ipasssign.hiddens {
+    -webkit-text-security: disc;
+}
+
+#ipasslog.hidden {
+    -webkit-text-security: disc;
+}
+
+.error-input {
+    border-color: red;
+}
+
+.error-input:after {
+    content: "\2757";
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: red;
+}
+
+.valid-input {
+    border-color: #198754;
+}
+
+.valid-input:after {
+    content: "\2714";
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #198754;
+}
+
+.line {
+    border-top: 1px solid #5a585894;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line-with-text {
+    text-align: center;
+    position: relative;
+}
+
+.line::before {
+    content: "OR";
+    display: inline;
+    position: relative;
+    top: -0.5em;
+    background-color: #fff;
+    padding: 0 7px;
+}
+
+.line::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#feidebtnl {
+    margin-bottom: 50px;
+}
+
+#forpass {
+    color: #000;
+    margin-top: 100px;
+    margin-left: 150px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#forpass:hover {
+    color: #198754;
+}
+
+.terms {
+    color: #000;
+    text-decoration: none;
+}
+
+.terms:hover {
+    color: #198754;
+}
+
+.footer {
+    font-size: smaller;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer a:hover {
+    color: #198754;
+}
+
+@media only screen and (max-width: 600px) {
+    #signform,
+    #signlogformlog {
+        width: 100%;
+        max-width: 100%;
+        padding: 0% 0% 0 0%;
+    }
+
+    #formsign,
+    #formlog {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #formsign input[type='email'],
+    #formsign input[type='password'],
+    #formlog input[type='email'],
+    #formlog input[type='password'],
+    input[type='text'] {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    #already,
+    #need {
+        margin-left:40%;
+        font-size: 14px;
+    }
+
+    #showhidesign,
+    #showhidelog {
+        margin-left: 70%;
+        font-size: 14px;
+    }
+
+    .checkbox-container {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #vercheck[type="checkbox"] {
+        margin-right: 0;
+    }
+
+    #isignbtn,
+    .logbtn,
+    .signupbtnw,
+    .signupbtnface {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .line {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #feidebtnl {
+        margin-bottom: 20px;
+    }
+
+    #forpass {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}

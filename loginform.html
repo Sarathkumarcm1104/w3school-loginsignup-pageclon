@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="signlogform">
+        <div id="signform" class="signformmain">
+            <form id="formsign">
+
+                <h1 id="hsign">Sign Up</h1>
+
+                <div id="emailsectionsign"><label class="email" id="signemail"><b>Email</b></label>
+                    <label id="already">Already have an account? <a id="loginpagea" href="#formlog">Log In</a></label>
+
+                    <input id="isemail" type="email" required>
+                    <span class="validation-icon" id="emailIcon"></span><br>
+                    <p id="error" style="display: none; color: red; margin-top: 0;"></p>
+                </div>
+
+                <div id="passsectionsign"><label class="pass" id="signpass"><b>Password</b></label>
+                    <button id="showhidesign" class="showhide"><i class="bi bi-eye"></i>Show</button>
+
+                    <input id="ipasssign" class="hiddens" type="password" required>
+                    <span class="validation-icons" id="passwordIcon"></span><br>
+                    <div id="errorBox" style="display: none; color: red;"></div>
+                </div>
+
+                <p id="strongPassword" style="display: none; color: rgb(13, 14, 13);"><i
+                        class="bi bi-check-circle-fill"></i>Your
+                    password is secure and you're all set!</p>
+                <div id="passcheck">
+                    <div id="passcheck1">
+                        <li id="lowercase" class="checkboxcon">
+                            <p class="checkcontain">One lowercase character</p>
+                        </li>
+                        <li id="uppercase" class="checkboxcon">
+                            <p class="checkcontain">One uppercase character</p>
+                        </li>
+                        <li id="onenumber" class="checkboxcon">
+                            <p class="checkcontain">One number</p>
+                        </li>
+                    </div>
+                    <div id="passcheck2">
+                        <li id="specialchar" class="checkboxcon">
+                            <p class="checkcontain">One special character</p>
+                        </li>
+                        <li id="minimumnum" class="checkboxcon">
+                            <p class="checkcontain">8 characters minimum</p>
+                        </li>
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <input id="vercheck" type="checkbox" checked>
+                    <label for="vercheck" id="midemail">Email me with news and updates</label>
+                </div>
+
+                <button class="signupbtn" id="isignbtn">Sign Up For Free</button>
+
+                <div class="line-with-text">
+                    <div class="line"></div>
+                </div>
+
+                <button class="signupbtnface" id="facebtns"><i class="bi bi-facebook"></i>Continue with
+                    Facebook</button>
+                <button class="signupbtnw" id="googlebtns"><svg id="googleicon" role="img" height="19" width="19"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 48 48">
+                        <defs>
+                            <path id="a"
+                                d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z">
+                            </path>
+                        </defs>
+                        <clipPath id="b">
+                            <use xlink:href="#a" overflow="visible"></use>
+                        </clipPath>
+                        <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z"></path>
+                        <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"></path>
+                        <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"></path>
+                        <path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"></path>
+                    </svg>Continue with Google</button>
+                <button class="signupbtnw" id="githubbtns"><i class="bi bi-github"></i>Continue with GitHup</button>
+                <button class="signupbtnw" id="feidebtns"><svg id="Layer_1" role="img" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 38" width="18" height="18" color="blue"
+                        class="LoginModal_feide_icon__Yu0E+">
+                        <defs></defs>
+                        <title>Horisontal_Feide</title>
+                        <rect class="cls-1" x="27.99" y="20.34" width="4.24" height="10.18"></rect>
+                        <circle class="cls-1" cx="16.11" cy="16.53" r="2.54"></circle>
+                        <polygon class="cls-1"
+                            points="18.23 23.31 13.99 23.31 13.99 34.76 4.24 34.76 4.24 20.34 0 20.34 0 35.61 0.02 35.61 0.02 39 32.23 39 32.23 34.76 18.23 34.76 18.23 23.31">
+                        </polygon>
+                        <path class="cls-1"
+                            d="M16.11,4.24A11.87,11.87,0,0,1,28,16.1h4.25A16.11,16.11,0,0,0,0,16.1H4.25A11.87,11.87,0,0,1,16.11,4.24Z">
+                        </path>
+                    </svg>Continue with
+                    Feide</button>
+
+                <div id="formfootdiv">
+                    By clicking the “Sign up for free” button or using any of the social login options, you are creating
+                    an account, and agree to W3Schools' <b><a href="https://www.w3schools.com/about/about_copyright.asp"
+                            class="terms">Terms of Service</a></b> and <b><a class="terms"
+                            href="https://www.w3schools.com/about/about_privacy.asp">Privacy Policy</a></b>
+                </div>
+
+            </form>
+        </div>
+        <div id="signlogformlog">
+            <form id="formlog" class="formlogin" style="display: none;">
+
+                <h1 id="hlog">Log in</h1>
+
+                <div id=emailsectionlog><label class="email" id="logemail"><b>Email</b></label>
+                    <label id="need">Need an account? <a id="signuppagea" href="#formsign">Sign Up</a></label>
+
+
+                    <input id="ilemail" type="email" required>
+                    <span class="validation-iconlog" id="emailIconlog"></span><br>
+                    <div id="errors" style="color: red; display: none ; margin-top: 0px;"></div>
+                </div>
+
+                <div id="passsectionlog" style="margin-top: 35px;"><label class="pass"
+                        id="logpass"><b>Password</b></label>
+                    <button id="showhidelog" class="showhide"><i class="bi bi-eye"></i>Show</button>
+
+                    <input id="ipasslog" class="hidden" type="password" required>
+                    <span class="validation-iconslog" id="passwordIconlog"></span><br>
+                    <div id="errorBo" style=" display: none ;"></div>
+                </div>
+
+                <button class="logbtn" id="ilogbtn">Log in</button>
+
+                <div class="line-with-text">
+                    <div class="line"></div>
+                </div>
+
+                <button class="signupbtnface" id="facebtnl"><i class="bi bi-facebook"></i>Continue with
+                    Facebook</button>
+                <button class="signupbtnw" id="googlebtnl"><i class="bi bi-google"></i>Continue with Google</button>
+                <button class="signupbtnw" id="githubbtnl"><i class="bi bi-github"></i>Continue with GitHup</button>
+                <button class="signupbtnw" id="feidebtnl"><svg id="Layer_1" role="img" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 38" width="18" height="18"
+                        class="LoginModal_feide_icon__Yu0E+">
+                        <defs></defs>
+                        <title>Horisontal_Feide</title>
+                        <rect class="cls-1" x="27.99" y="27.34" width="4.24" height="10.18"></rect>
+                        <circle class="cls-1" cx="16.11" cy="16.53" r="2.54"></circle>
+                        <polygon class="cls-1"
+                            points="18.23 23.31 13.99 23.31 13.99 34.76 4.24 34.76 4.24 20.34 0 20.34 0 35.61 0.02 35.61 0.02 39 32.23 39 32.23 34.76 18.23 34.76 18.23 23.31">
+                        </polygon>
+                        <path class="cls-1"
+                            d="M16.11,4.24A11.87,11.87,0,0,1,28,16.1h4.25A16.11,16.11,0,0,0,0,16.1H4.25A11.87,11.87,0,0,1,16.11,4.24Z">
+                        </path>
+                    </svg>Continue with
+                    Feide</button><br>
+
+                <a id="forpass" href="https://profile.w3schools.com/reset">Forgot password?</a>
+
+            </form>
+            <footer class="footer" id="foot" style="display: none;">
+                © 1999 - 2023 <a href="https://w3schools.com/">W3schools.</a> All rights reserved. <a
+                    href="https://www.w3schools.com/about/about_privacy.asp">Cookie policy</a>, <a
+                    href="https://www.w3schools.com/about/about_privacy.asp">Privacy</a> and <a
+                    href="https://www.w3schools.com/about/about_copyright.asp"> Terms</a>.
+            </footer>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="log.js"></script>
+</body>
+
+</html>
